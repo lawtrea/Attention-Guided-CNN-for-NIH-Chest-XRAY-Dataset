@@ -76,6 +76,6 @@ C --> R(Results)
 
 ```
 
-
+You can download the weights files from [here] (https://khan.github.io/KaTeX/).
 
 
