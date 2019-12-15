@@ -60,7 +60,7 @@ The following table will depict the results achieved by us in comparison with th
 ### Graphical Presentation of Model:
 
 ```mermaid
-graph LR;
+graph LR
 A[Input] --> B(Global Branch)
 A --> M
 M(Mask Interface) --> C(Fusion Branch)
@@ -69,6 +69,7 @@ B --> M
 B --> C
 L --> C
 C --> R(Results)
+
 ```
 
 
