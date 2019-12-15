@@ -57,7 +57,11 @@ The following table will depict the results achieved by us in comparison with th
 |Local Branch|0.810|
 |**AG-CNN**|**0.861**|
 
+So these results depict that while using this sequential model we can increase the average test accuracy. The global branch informs the underlying CXR information derived from the global image as input. In the global branch, we train a variant of ResNet-50 as the backbone model. It consists of five down-sampling blocks, followed by a global max pooling layer and a 15-dimensional fully connected (FC) layer for classification. On the other hand, the local branch focuses on the lesion area and is expected to alleviate the drawbacks of only using the global image. In more details, the local branch possesses the same convolutional network structure with the global branch. Note that, these two branches do not share weights since they have distinct purposes
+
 ### Graphical Presentation of Model:
+
+![](https://github.com/lawAfua/Attention-Guided-CNN-for-NIH-Chest-XRAY-Dataset/blob/master/Sources/model_graph.JPG)
 
 ```mermaid
 graph LR
