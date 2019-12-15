@@ -1,5 +1,5 @@
 # Attention-Guided-CNN-for-NIH-Chest-XRAY-Dataset
-![](https://github.com/lawAfua/Attention-Guided-CNN-for-NIH-Chest-XRAY-Dataset/blob/master/method.JPG)
+![](https://github.com/lawAfua/Attention-Guided-CNN-for-NIH-Chest-XRAY-Dataset/blob/master/Sources/method.JPG)
 
 
 The architecture of AG-CNN is presented in Figure 1. Basically, it has two major branches, i.e., the global and local branches, and a fusion branch. Both the global and local branches are classification networks that predict whether the pathologies are present or not in the image. Given an image, the global branch is first fine-tuned from a classification CNN using the global image. Then, we crop an attended region from the global image and train it for classification on the local branch. Finally, the last pooling layers of both the global and local branches are concatenated for fine-tuning the fusion branch. **Multi-label setup:**  We label each image with a 15-dim vector.
