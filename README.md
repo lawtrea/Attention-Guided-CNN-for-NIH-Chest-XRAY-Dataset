@@ -46,6 +46,7 @@ The results that I achieved after running for 100 epochs were as follows:
  
  The weights can be found in the folder labeled `previous_model`. 
 The following table will depict the results achieved by us in comparison with the other methods.
+
 |Methods  |Average AUROC  |
 |--|--|
 | Wang et al. |0.738  |
@@ -55,15 +56,22 @@ The following table will depict the results achieved by us in comparison with th
 |Global Branch|0.842|
 |Local Branch|0.810|
 |**AG-CNN**|**0.861**|
+
 ### Graphical Presentation of Model:
 
 ```mermaid
 graph LR
-A[Input] --> B(Local Branch)
-A --> C(Fusion Branch)
-A --> F(Global Branch)
-B --> D{Rhombus}
-C --> D
+A[Input] --> B(Global Branch)
+A --> M
+M(Mask Interface) --> C(Fusion Branch)
+M --> L(Local Branch)
+B --> M
+B --> C
+L --> C
+C --> R(Results)
+
 ```
+
+
 
 
