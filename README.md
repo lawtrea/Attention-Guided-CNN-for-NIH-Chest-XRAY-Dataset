@@ -76,7 +76,6 @@ C --> R(Results)
 
 ```
 
-You can download the weights files from [here]
-(https://khan.github.io/KaTeX/).
+You can download the weights files from [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
 
